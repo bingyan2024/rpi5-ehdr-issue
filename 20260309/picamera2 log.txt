@@ -1,0 +1,578 @@
+pi@raspberrypi:~/capture $ python3 cap.py
+[0:56:14.239427035] [2196]  INFO IPAManager ipa_manager.cpp:147 libcamera is not installed. Adding '/home/pi/libcamera/build/src/ipa' to the IPA search path
+[0:56:14.239895664] [2196]  INFO Camera camera_manager.cpp:340 libcamera v0.6.0+rpt20251202+dirty (2026-03-05T10:50:17CST)
+[0:56:14.248306127] [2197]  INFO RPI pisp.cpp:720 libpisp version v1.3.0 9ba67e6680f0-dirty 12-02-2026 (09:16:53)
+[0:56:14.250615920] [2197]  INFO IPAProxy ipa_proxy.cpp:73 libcamera is not installed. Loading IPA configuration from '/home/pi/libcamera/src/ipa/rpi/pisp/data'
+[0:56:14.250697951] [2197]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /home/pi/libcamera/src/ipa/rpi/pisp/data/ar0246.json
+[0:56:14.250736133] [2197]  INFO RPI pipeline_base.cpp:1159 loaded configuration file
+[0:56:14.250773204] [2197] ERROR RPI pipeline_base.cpp:1162 to get sensor info
+[0:56:14.250806238] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:879 'ar0246 11-0010': lagency get selection start
+[0:56:14.250855975] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:886 'ar0246 11-0010': lagency get selection over
+[0:56:14.250893472] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:896 'ar0246 11-0010': lagency get format start
+[0:56:14.250938042] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:904 'ar0246 11-0010': lagency get format over
+[0:56:14.250973317] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:921 'ar0246 11-0010': lagency get controls start
+[0:56:14.251021128] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:928 'ar0246 11-0010': lagency get controls over
+[0:56:14.251057218] [2197]  INFO RPI pipeline_base.cpp:1168 got sensorInfo
+[0:56:14.251085586] [2197]  INFO RPI pipeline_base.cpp:1175 goto ipa init
+[0:56:14.251968162] [2197]  INFO Camera camera_manager.cpp:223 Adding camera '/base/axi/pcie@1000120000/rp1/i2c@80000/ar0246@10' for pipeline handler rpi/pisp
+[0:56:14.252047804] [2197]  INFO RPI pisp.cpp:1181 Registered camera /base/axi/pcie@1000120000/rp1/i2c@80000/ar0246@10 to CFE device /dev/media3 and ISP device /dev/media0 using PiSP variant BCM2712_D0
+[0:56:14.254581320] [2196]  INFO CameraSensor camera_sensor_legacy.cpp:973 'ar0246 11-0010': ----exit compute, orientation: Rotate0
+[0:56:14.254805875] [2196]  INFO CameraSensor camera_sensor_legacy.cpp:973 'ar0246 11-0010': ----exit compute, orientation: Rotate0
+[0:56:14.254841150] [2196]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1920x1080-SGRBG16/RAW
+[0:56:14.254883777] [2197] ERROR CameraSensor camera_sensor_legacy.cpp:765 'ar0246 11-0010': ~~~~~~~~~~~~~legacy, VFLIP: %d1
+[0:56:14.254991194] [2197]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@80000/ar0246@10 - Selected sensor format: 1920x1080-SGRBG12_1X12/RAW - Selected CFE format: 1920x1080-GR16/RAW
+[0:56:14.255108684] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:879 'ar0246 11-0010': lagency get selection start
+[0:56:14.255153958] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:886 'ar0246 11-0010': lagency get selection over
+[0:56:14.255167494] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:896 'ar0246 11-0010': lagency get format start
+[0:56:14.255205361] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:904 'ar0246 11-0010': lagency get format over
+[0:56:14.255217416] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:921 'ar0246 11-0010': lagency get controls start
+[0:56:14.255258339] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:928 'ar0246 11-0010': lagency get controls over
+[0:56:14.255330074] [2197]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:14.255376829] [2197]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 19995.15us (Exposure lines: 864, AGC requested 20000.00us) Gain: 1 (Gain Code: 32)
+[0:56:14.260683508] [2201]  WARN IPARPI pisp.cpp:568 Could not set NOISE_REDUCTION_MODE - no Denoise algorithm
+[0:56:14.260771630] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:14.260783852] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 995.13us (Exposure lines: 43, AGC requested 1000.00us) Gain: 1 (Gain Code: 32)
+[0:56:15.326466138] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.359951059] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.360033497] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.360049625] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 532.28us (Exposure lines: 22, AGC requested 544.54us) Gain: 1 (Gain Code: 32)
+[0:56:15.360081567] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.360177744] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.55599, b:2.66685
+[0:56:15.393235219] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.393274827] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.393285178] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 532.28us (Exposure lines: 22, AGC requested 542.75us) Gain: 1 (Gain Code: 32)
+[0:56:15.393313934] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.426551246] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.426590354] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.426600798] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 532.28us (Exposure lines: 22, AGC requested 543.96us) Gain: 1 (Gain Code: 32)
+[0:56:15.426625351] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.426694920] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.55612, b:2.66909
+[0:56:15.459861663] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.459903974] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.459913529] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 1157.13us (Exposure lines: 50, AGC requested 1172.02us) Gain: 1 (Gain Code: 32)
+[0:56:15.459936768] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.493186930] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.493224131] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.493234426] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 334.83us) Gain: 1 (Gain Code: 32)
+[0:56:15.493257388] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.493335511] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.55889, b:2.70589
+[0:56:15.526507328] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.526544825] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.526554028] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 370.30us) Gain: 1 (Gain Code: 32)
+[0:56:15.526576137] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.559828818] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.559865537] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.559875203] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 671.13us (Exposure lines: 28, AGC requested 688.96us) Gain: 1 (Gain Code: 32)
+[0:56:15.559896942] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.559972362] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.55915, b:2.72116
+[0:56:15.593157270] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.593193656] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.593203489] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 316.58us) Gain: 1 (Gain Code: 32)
+[0:56:15.593225931] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.626479519] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.626516498] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.626526497] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 231.43us (Exposure lines: 10, AGC requested 251.21us) Gain: 1 (Gain Code: 32)
+[0:56:15.626550347] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.626622971] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.55176, b:2.70131
+[0:56:15.659770104] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.659806342] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.659815841] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 393.42us (Exposure lines: 17, AGC requested 395.21us) Gain: 1 (Gain Code: 32)
+[0:56:15.659839321] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.693087669] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.693124184] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.693134831] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 371.11us) Gain: 1 (Gain Code: 32)
+[0:56:15.693158256] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.726414417] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.726449452] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.726459636] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 332.29us) Gain: 1 (Gain Code: 32)
+[0:56:15.726481597] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.759745888] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.759782607] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.759791977] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 317.30us) Gain: 1 (Gain Code: 32)
+[0:56:15.759813642] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.793053861] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.793090450] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.793100024] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 301.69us) Gain: 1 (Gain Code: 32)
+[0:56:15.793122836] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.826378406] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.826415995] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.826425921] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 277.71us (Exposure lines: 12, AGC requested 281.44us) Gain: 1 (Gain Code: 32)
+[0:56:15.826448141] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.859714024] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.859753058] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.859763039] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 254.57us (Exposure lines: 11, AGC requested 264.04us) Gain: 1 (Gain Code: 32)
+[0:56:15.859785537] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.893029255] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.893065660] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.893075567] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 231.43us (Exposure lines: 10, AGC requested 253.93us) Gain: 1 (Gain Code: 32)
+[0:56:15.893098824] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.926348449] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.926386594] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.926396760] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 231.43us (Exposure lines: 10, AGC requested 242.17us) Gain: 1 (Gain Code: 32)
+[0:56:15.926417407] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.959695234] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.959737230] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.959749414] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 208.28us (Exposure lines: 9, AGC requested 229.48us) Gain: 1 (Gain Code: 32)
+[0:56:15.959774672] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:15.959843647] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.54033, b:2.70599
+[0:56:15.993000336] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:15.993038166] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:15.993047832] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 208.28us (Exposure lines: 9, AGC requested 215.70us) Gain: 1 (Gain Code: 32)
+[0:56:15.993072589] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.026365211] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.026406541] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.026417318] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 185.14us (Exposure lines: 8, AGC requested 207.65us) Gain: 1 (Gain Code: 32)
+[0:56:16.026442112] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.059653037] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.059691849] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.059701311] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 185.14us (Exposure lines: 8, AGC requested 196.93us) Gain: 1 (Gain Code: 32)
+[0:56:16.059723346] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.092968380] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.093006932] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.093016783] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 185.14us (Exposure lines: 8, AGC requested 190.59us) Gain: 1 (Gain Code: 32)
+[0:56:16.093038226] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.126287166] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.126325793] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.126335162] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 180.66us) Gain: 1 (Gain Code: 32)
+[0:56:16.126357697] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.159607489] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.159644079] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.159654134] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 174.79us) Gain: 1 (Gain Code: 32)
+[0:56:16.159677391] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.192932331] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.192967884] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.192977587] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 170.95us) Gain: 1 (Gain Code: 32)
+[0:56:16.193000603] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.226251598] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.226288021] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.226297483] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 162.38us) Gain: 1 (Gain Code: 32)
+[0:56:16.226317704] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.259575513] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.259611899] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.259621343] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 157.30us) Gain: 1 (Gain Code: 32)
+[0:56:16.259642637] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.292906335] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.292944665] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.292954331] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 154.14us) Gain: 1 (Gain Code: 32)
+[0:56:16.292976681] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.293055230] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.53601, b:2.72377
+[0:56:16.326226620] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.326261543] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.326271024] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 152.16us) Gain: 1 (Gain Code: 32)
+[0:56:16.326294003] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.359543628] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.359578681] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.359587939] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 144.52us) Gain: 1 (Gain Code: 32)
+[0:56:16.359609456] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.392860913] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.392896818] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.392907169] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 140.03us) Gain: 1 (Gain Code: 32)
+[0:56:16.392927704] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.426191198] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.426228880] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.426238139] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 137.00us) Gain: 1 (Gain Code: 32)
+[0:56:16.426261415] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.459511669] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.459548351] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.459558961] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 135.06us) Gain: 1 (Gain Code: 32)
+[0:56:16.459581570] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.492834750] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.492869155] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.492878987] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 133.70us) Gain: 1 (Gain Code: 32)
+[0:56:16.492899652] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.526155387] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.526197088] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.526206476] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 133.70us) Gain: 1 (Gain Code: 32)
+[0:56:16.526228067] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.559473840] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.559508670] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.559518892] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 126.12us) Gain: 1 (Gain Code: 32)
+[0:56:16.559540131] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.592801087] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.592846158] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.592857064] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 127.87us) Gain: 1 (Gain Code: 32)
+[0:56:16.592879470] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.626127669] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.626169332] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.626180257] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 127.87us) Gain: 1 (Gain Code: 32)
+[0:56:16.626203274] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.626270028] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.53874, b:2.74027
+[0:56:16.659446843] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.659488099] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.659499505] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 127.87us) Gain: 1 (Gain Code: 32)
+[0:56:16.659521078] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.692768925] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.692813625] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.692824328] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 127.87us) Gain: 1 (Gain Code: 32)
+[0:56:16.692845085] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.726093062] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.726136447] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.726146854] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 127.87us) Gain: 1 (Gain Code: 32)
+[0:56:16.726171574] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.759416699] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.759457732] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.759468935] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 127.87us) Gain: 1 (Gain Code: 32)
+[0:56:16.759489896] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.792740058] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.792782777] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.792793424] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 127.87us) Gain: 1 (Gain Code: 32)
+[0:56:16.792816644] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.826059251] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.826100581] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.826112839] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 127.87us) Gain: 1 (Gain Code: 32)
+[0:56:16.826135837] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.859385165] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.859427903] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.859439031] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 131.71us) Gain: 1 (Gain Code: 32)
+[0:56:16.859461363] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.892703914] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.892743448] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.892755224] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 133.59us) Gain: 1 (Gain Code: 32)
+[0:56:16.892778352] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.926027106] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.926069085] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.926079750] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 133.59us) Gain: 1 (Gain Code: 32)
+[0:56:16.926101212] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.959369316] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.959415460] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.959427145] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 133.59us) Gain: 1 (Gain Code: 32)
+[0:56:16.959451624] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:16.959512490] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.53764, b:2.74465
+[0:56:16.992677954] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:16.992718136] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:16.992728135] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 133.59us) Gain: 1 (Gain Code: 32)
+[0:56:16.992751504] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.026000443] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.026040514] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.026051069] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 133.59us) Gain: 1 (Gain Code: 32)
+[0:56:17.026072789] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.059321932] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.059361762] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.059374150] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 133.59us) Gain: 1 (Gain Code: 32)
+[0:56:17.059397482] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.092640329] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.092683492] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.092694213] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 137.08us) Gain: 1 (Gain Code: 32)
+[0:56:17.092716897] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.125963892] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.126006018] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.126016221] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 138.75us) Gain: 1 (Gain Code: 32)
+[0:56:17.126039423] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.159295510] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.159340358] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.159352598] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 138.75us) Gain: 1 (Gain Code: 32)
+[0:56:17.159375559] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.192616832] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.192662569] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.192673272] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 138.75us) Gain: 1 (Gain Code: 32)
+[0:56:17.192696604] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.225934098] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.225975891] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.225987446] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 138.75us) Gain: 1 (Gain Code: 32)
+[0:56:17.226010203] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.259259974] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.259302490] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.259314526] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 115.71us (Exposure lines: 5, AGC requested 138.75us) Gain: 1 (Gain Code: 32)
+[0:56:17.259337653] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.292583314] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.292627366] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.292638735] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 142.24us) Gain: 1 (Gain Code: 32)
+[0:56:17.292660771] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.292726117] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.53471, b:2.74241
+[0:56:17.325906468] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.325949187] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.325960575] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 144.16us) Gain: 1 (Gain Code: 32)
+[0:56:17.325983333] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.359224697] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.359265990] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.359276711] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 144.16us) Gain: 1 (Gain Code: 32)
+[0:56:17.359297876] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.392549240] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.392590089] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.392602717] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 151.81us) Gain: 1 (Gain Code: 32)
+[0:56:17.392625382] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.425871191] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.425912225] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.425923020] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 138.86us (Exposure lines: 6, AGC requested 159.50us) Gain: 1 (Gain Code: 32)
+[0:56:17.425946111] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.459196790] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.459237194] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.459247785] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 163.46us) Gain: 1 (Gain Code: 32)
+[0:56:17.459270506] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.492516889] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.492557348] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.492567810] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 165.33us) Gain: 1 (Gain Code: 32)
+[0:56:17.492589938] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.525842487] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.525883984] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.525894298] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 165.33us) Gain: 1 (Gain Code: 32)
+[0:56:17.525916648] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.559164475] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.559204935] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.559215952] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 176.09us) Gain: 1 (Gain Code: 32)
+[0:56:17.559238302] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.592489277] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.592531626] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.592542995] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 162.00us (Exposure lines: 7, AGC requested 185.01us) Gain: 1 (Gain Code: 32)
+[0:56:17.592565493] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.625815265] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.625855243] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.625866909] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 185.14us (Exposure lines: 8, AGC requested 189.68us) Gain: 1 (Gain Code: 32)
+[0:56:17.625890240] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.625959568] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.53277, b:2.72715
+[0:56:17.659135049] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.659174675] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.659187804] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 185.14us (Exposure lines: 8, AGC requested 192.26us) Gain: 1 (Gain Code: 32)
+[0:56:17.659211932] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.692455000] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.692494608] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.692506681] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 185.14us (Exposure lines: 8, AGC requested 192.26us) Gain: 1 (Gain Code: 32)
+[0:56:17.692528420] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.725782395] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.725824799] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.725834909] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 185.14us (Exposure lines: 8, AGC requested 199.85us) Gain: 1 (Gain Code: 32)
+[0:56:17.725856611] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.759096846] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.759138157] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.759149768] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 185.14us (Exposure lines: 8, AGC requested 207.22us) Gain: 1 (Gain Code: 32)
+[0:56:17.759171636] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.792424778] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.792466441] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.792477218] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 208.28us (Exposure lines: 9, AGC requested 211.01us) Gain: 1 (Gain Code: 32)
+[0:56:17.792499383] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.825743914] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.825786466] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.825796354] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 208.28us (Exposure lines: 9, AGC requested 211.01us) Gain: 1 (Gain Code: 32)
+[0:56:17.825818871] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.859071160] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.859112157] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.859123082] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 208.28us (Exposure lines: 9, AGC requested 215.75us) Gain: 1 (Gain Code: 32)
+[0:56:17.859144988] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.892389482] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.892430923] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.892441311] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 208.28us (Exposure lines: 9, AGC requested 224.71us) Gain: 1 (Gain Code: 32)
+[0:56:17.892462995] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.925714118] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.925759281] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.925770021] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 231.43us (Exposure lines: 10, AGC requested 235.34us) Gain: 1 (Gain Code: 32)
+[0:56:17.925791537] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.959066325] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.959114118] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.959125783] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 231.43us (Exposure lines: 10, AGC requested 240.87us) Gain: 1 (Gain Code: 32)
+[0:56:17.959150578] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:17.959213665] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.53506, b:2.71663
+[0:56:17.992364333] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:17.992406163] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:17.992415977] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 231.43us (Exposure lines: 10, AGC requested 243.93us) Gain: 1 (Gain Code: 32)
+[0:56:17.992438716] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.025685062] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.025726929] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.025740317] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 231.43us (Exposure lines: 10, AGC requested 251.86us) Gain: 1 (Gain Code: 32)
+[0:56:18.025764630] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.059010901] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.059051194] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.059061638] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 254.57us (Exposure lines: 11, AGC requested 258.67us) Gain: 1 (Gain Code: 32)
+[0:56:18.059083692] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.092331834] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.092374293] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.092386403] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 254.57us (Exposure lines: 11, AGC requested 262.47us) Gain: 1 (Gain Code: 32)
+[0:56:18.092409809] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.125653155] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.125693744] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.125704373] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 254.57us (Exposure lines: 11, AGC requested 266.84us) Gain: 1 (Gain Code: 32)
+[0:56:18.125725723] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.158974791] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.159014899] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.159028194] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 254.57us (Exposure lines: 11, AGC requested 275.79us) Gain: 1 (Gain Code: 32)
+[0:56:18.159051599] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.192299223] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.192338460] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.192348571] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 277.71us (Exposure lines: 12, AGC requested 283.35us) Gain: 1 (Gain Code: 32)
+[0:56:18.192369532] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.225624301] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.225666557] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.225677057] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 277.71us (Exposure lines: 12, AGC requested 287.11us) Gain: 1 (Gain Code: 32)
+[0:56:18.225699758] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.258943084] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.258984340] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.258996562] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 277.71us (Exposure lines: 12, AGC requested 287.11us) Gain: 1 (Gain Code: 32)
+[0:56:18.259018764] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.292270496] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.292313122] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.292325862] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 277.71us (Exposure lines: 12, AGC requested 295.56us) Gain: 1 (Gain Code: 32)
+[0:56:18.292348471] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.292416818] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.54015, b:2.70766
+[0:56:18.325591186] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.325631405] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.325644089] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 302.30us) Gain: 1 (Gain Code: 32)
+[0:56:18.325666921] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.358910728] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.358949521] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.358961021] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 306.03us) Gain: 1 (Gain Code: 32)
+[0:56:18.358983167] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.392235696] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.392276007] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.392287488] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 306.03us) Gain: 1 (Gain Code: 32)
+[0:56:18.392310301] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.425557386] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.425599457] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.425610159] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 314.31us) Gain: 1 (Gain Code: 32)
+[0:56:18.425633139] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.458880891] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.458924424] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.458935090] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 325.93us) Gain: 1 (Gain Code: 32)
+[0:56:18.458958755] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.492213172] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.492255928] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.492267594] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 332.30us) Gain: 1 (Gain Code: 32)
+[0:56:18.492291092] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.525529752] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.525572433] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.525582747] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 335.87us) Gain: 1 (Gain Code: 32)
+[0:56:18.525605523] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.558850182] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.558893735] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.558905178] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 344.15us) Gain: 1 (Gain Code: 32)
+[0:56:18.558928306] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.592195741] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.592239256] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.592249644] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 347.14us (Exposure lines: 15, AGC requested 350.85us) Gain: 1 (Gain Code: 32)
+[0:56:18.592273235] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.625501321] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.625542947] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.625553910] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 347.14us (Exposure lines: 15, AGC requested 354.54us) Gain: 1 (Gain Code: 32)
+[0:56:18.625576204] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.625644291] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.5454, b:2.7095
+[0:56:18.658823159] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.658865674] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.658878396] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 347.14us (Exposure lines: 15, AGC requested 354.54us) Gain: 1 (Gain Code: 32)
+[0:56:18.658902727] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.692147682] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.692188753] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.692201345] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 347.14us (Exposure lines: 15, AGC requested 362.18us) Gain: 1 (Gain Code: 32)
+[0:56:18.692223473] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.725466206] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.725509221] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.725519794] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 347.14us (Exposure lines: 15, AGC requested 368.98us) Gain: 1 (Gain Code: 32)
+[0:56:18.725542793] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.758783730] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.758826134] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.758837466] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 372.69us) Gain: 1 (Gain Code: 32)
+[0:56:18.758858483] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.792121752] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.792157897] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.792162415] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 372.69us) Gain: 1 (Gain Code: 32)
+[0:56:18.792178544] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.825433424] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.825470958] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.825475069] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 372.69us) Gain: 1 (Gain Code: 32)
+[0:56:18.825491308] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.858760040] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.858797481] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.858801925] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 380.14us) Gain: 1 (Gain Code: 32)
+[0:56:18.858817368] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.892082174] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.892117616] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.892122004] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 389.24us) Gain: 1 (Gain Code: 32)
+[0:56:18.892139207] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.925425066] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.925462841] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.925467359] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 393.42us (Exposure lines: 17, AGC requested 393.77us) Gain: 1 (Gain Code: 32)
+[0:56:18.925483469] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.958748460] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.958789030] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.958794197] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 393.42us (Exposure lines: 17, AGC requested 393.77us) Gain: 1 (Gain Code: 32)
+[0:56:18.958811344] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:18.958899133] [2198]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.54844, b:2.71003
+[0:56:18.992056910] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:18.992094407] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:18.992098758] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 393.42us (Exposure lines: 17, AGC requested 393.77us) Gain: 1 (Gain Code: 32)
+[0:56:18.992117535] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.025381507] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:19.025417634] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.025422134] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 393.42us (Exposure lines: 17, AGC requested 402.17us) Gain: 1 (Gain Code: 32)
+[0:56:19.025438410] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.058701586] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:19.058737898] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.058741972] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 393.42us (Exposure lines: 17, AGC requested 411.53us) Gain: 1 (Gain Code: 32)
+[0:56:19.058757841] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.092022424] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:19.092059051] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.092063273] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 416.57us (Exposure lines: 18, AGC requested 416.64us) Gain: 1 (Gain Code: 32)
+[0:56:19.092080105] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.125345022] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:19.125381778] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.125385963] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 416.57us (Exposure lines: 18, AGC requested 416.64us) Gain: 1 (Gain Code: 32)
+[0:56:19.125403276] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.158715949] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:19.158768611] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.158774833] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 416.57us (Exposure lines: 18, AGC requested 416.64us) Gain: 1 (Gain Code: 32)
+[0:56:19.158799794] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.192050971] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:19.192102504] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.192109744] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 416.57us (Exposure lines: 18, AGC requested 424.77us) Gain: 1 (Gain Code: 32)
+[0:56:19.192133205] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.225365678] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:19.225417378] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.225424118] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 416.57us (Exposure lines: 18, AGC requested 431.49us) Gain: 1 (Gain Code: 32)
+[0:56:19.225446616] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.258715550] [2201]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:19.258767138] [2201]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.258773119] [2201]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 416.57us (Exposure lines: 18, AGC requested 431.49us) Gain: 1 (Gain Code: 32)
+[0:56:19.258797673] [2201]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:19.272829085] [2200]  INFO CameraSensor camera_sensor_legacy.cpp:973 'ar0246 11-0010': ----exit compute, orientation: Rotate0
+[0:56:19.273135783] [2200]  INFO CameraSensor camera_sensor_legacy.cpp:973 'ar0246 11-0010': ----exit compute, orientation: Rotate0
+[0:56:19.273175484] [2200]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-RGB888/sRGB (1) 1920x1080-SGRBG16/RAW
+[0:56:19.279297224] [2197] ERROR CameraSensor camera_sensor_legacy.cpp:765 'ar0246 11-0010': ~~~~~~~~~~~~~legacy, VFLIP: %d1
+[0:56:19.279411029] [2197]  INFO RPI pisp.cpp:1485 Sensor: /base/axi/pcie@1000120000/rp1/i2c@80000/ar0246@10 - Selected sensor format: 1920x1080-SGRBG12_1X12/RAW - Selected CFE format: 1920x1080-GR16/RAW
+[0:56:19.279523539] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:879 'ar0246 11-0010': lagency get selection start
+[0:56:19.279544797] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:886 'ar0246 11-0010': lagency get selection over
+[0:56:19.279558518] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:896 'ar0246 11-0010': lagency get format start
+[0:56:19.279571776] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:904 'ar0246 11-0010': lagency get format over
+[0:56:19.279585071] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:921 'ar0246 11-0010': lagency get controls start
+[0:56:19.279603088] [2197]  INFO CameraSensor camera_sensor_legacy.cpp:928 'ar0246 11-0010': lagency get controls over
+[0:56:19.285629095] [2202]  WARN IPARPI pisp.cpp:568 Could not set NOISE_REDUCTION_MODE - no Denoise algorithm
+[0:56:19.285697997] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:19.285709311] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 416.57us (Exposure lines: 18, AGC requested 431.49us) Gain: 1 (Gain Code: 32)
+[0:56:20.351218237] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.384681338] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.384728779] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.384741463] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 382.69us) Gain: 1 (Gain Code: 32)
+[0:56:20.384771405] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.384822327] [2200]  INFO RPiAwb awb.cpp:768 Grey world AWB gains: r:1.55652, b:2.67402
+[0:56:20.418004154] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.418049614] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.418059891] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 343.53us) Gain: 1 (Gain Code: 32)
+[0:56:20.418088055] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.451316230] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.451358616] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.451368374] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 312.29us) Gain: 1 (Gain Code: 32)
+[0:56:20.451392780] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.484646157] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.484693894] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.484703726] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 393.42us (Exposure lines: 17, AGC requested 414.34us) Gain: 1 (Gain Code: 32)
+[0:56:20.484728798] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.517967584] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.518008025] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.518018542] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 370.28us (Exposure lines: 16, AGC requested 378.17us) Gain: 1 (Gain Code: 32)
+[0:56:20.518041818] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.551288418] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.551330230] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.551341451] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 346.59us) Gain: 1 (Gain Code: 32)
+[0:56:20.551365301] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.584624029] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.584676729] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.584688228] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 324.00us (Exposure lines: 14, AGC requested 330.88us) Gain: 1 (Gain Code: 32)
+[0:56:20.584715078] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.617936605] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.617981787] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.617992008] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 300.85us (Exposure lines: 13, AGC requested 315.40us) Gain: 1 (Gain Code: 32)
+[0:56:20.618014803] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.651257162] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.651300343] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.651313342] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 277.71us (Exposure lines: 12, AGC requested 298.08us) Gain: 1 (Gain Code: 32)
+[0:56:20.651337563] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
+[0:56:20.684556627] [2202]  WARN RPiAgc agc_channel.cpp:720 No lux level found
+[0:56:20.684598791] [2202]  INFO IPARPI ipa_base.cpp:1814 applyAGC, minanaloggain: 32, maxGainCode3858
+[0:56:20.684603809] [2202]  INFO IPARPI ipa_base.cpp:1822 Applying AGC Exposure: 277.71us (Exposure lines: 12, AGC requested 283.95us) Gain: 1 (Gain Code: 32)
+[0:56:20.684624752] [2202]  WARN RPiCcm ccm.cpp:165 no lux value found
